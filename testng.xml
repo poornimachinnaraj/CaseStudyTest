@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<suite name="Testing REST API" >
+  <test name="Folder APT Testing" >
+    <classes>
+      <class name="APITesting.api.FileGetRequest"> 
+	   	   <include method = "CreateFolder_01"/>
+	       <include method = "GetFolderbyID_02"/>
+	       <include method = "GetListofFolder_03"/>
+	       <include method = "GetListofFolder_04"/>
+	       <include method = "GetListofFolder_05"/>
+	       <include method = "GetListofFolder_06"/>
+	       <include method = "MoidfyFolderbyID_07"/>
+	       <include method = "DeleteFolderbyID_08"/>
+	       <include method = "DeleteFolderbyID_09"/>
+           <include method = "DeleteFolderbyID_10"/>	   	
+      </class>  
+    </classes>
+ </test>
+ <test name="Document APT Testing" >
+    <classes>
+      <class name="APITesting.api.DocmentsTesting">
+      	   <include method = "CreateDocument_01"/>
+	       <include method = "GetDocumentbyID_02"/>
+	       <include method = "GetDocumentList_03"/>
+	       <include method = "GetDocumentList_04"/>
+	       <include method = "GetDocumentList_05"/>
+	       <include method = "GetDocumentList_06"/>
+	       <include method = "MoidfyDocumentbyID_07"/>
+	       <include method = "DeleteDocumentbyID_08"/>
+	       <include method = "DeleteDocumentbyID_09"/>      	      	  
+      </class>   
+    </classes>
+ </test>
+ <test name="Modify Folder APT Testing" >
+    <classes>
+      <class name="APITesting.api.FolderContents"> 
+      	  <include method = "AddDocToFolder_01"/>
+	      <include method = "GetFolderContent_02"/>
+	      <include method = "RemoveDocumnetFromFolder_03"/>     	
+      </class>
+    </classes>
+ </test>
+</suite>
