@@ -17,8 +17,8 @@ public class RequestResponse {
 		 private static String sDocumentData2 = "{ \"name\": \"Document8\", \"text\": \"Hi ,are you ok ?\"}";		
 		 public static String sFolderID = "";
 		 public static String sDocumentID = "";
-		 private static String sFolderURI = "http://192.168.99.100:8080/my-box/v1/folders";
-		 private static String sDocumnetURI = "http://192.168.99.100:8080/my-box/v1/documents";
+		 private static String sFolderURI = "http://localhost:8080/my-box/v1/folders";
+		 private static String sDocumnetURI = "http://localhost:8080/my-box/v1/documents";
 		 private static int nResponseCode = 0;
 		 public static boolean bIsItFromFolder = false;
 		 
